@@ -1,0 +1,24 @@
+{
+  "name": "desarrolladoras-node",
+  "version": "1.0.0",
+  "description": "Se propone crear un API donde se integre la creación de un servicio básico utilizando Node.js (nota técnica 6.4) con el almacenamiento de datos en una base de datos MongoDB (nota técnica 6.5).",
+  "main": "main.js",
+  "dependencies": {
+    "mongodb": "^3.6.6"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mnemearie/desarrolladoras-node.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mnemearie/desarrolladoras-node/issues"
+  },
+  "homepage": "https://github.com/mnemearie/desarrolladoras-node#readme"
+}
