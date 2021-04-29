@@ -41,7 +41,7 @@ const server = http.createServer((request, response) => {
             
             const querystring = require('querystring');
             // Definir documento con queryString X
-            let document = querystring.parse(body);
+            let document = querystring.decode(body);
 
 
             client.connect().then(async () => {
@@ -53,13 +53,13 @@ const server = http.createServer((request, response) => {
             
             
                 // Llamar a la función para insertar
-                await collection.insertOne(document);
+                const insertResult = await collection.insertOne(document);
             
                 // Llamar a la función para recuperar
                 let findResult = await collection.find({}).toArray();
             
             
-                client.close();
+              //  client.close();
         
 
             // Código de estado HTTP que se devuelve
